@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="loader.css">
+    <script src="https://kit.fontawesome.com/0086b8524f.js" crossorigin="anonymous"></script>
+    <title>Forecast by Jakub Jaszcz</title>
+</head>
+<body>
+    <div class="container">
+        <!--Loader-->
+        <div id="loader">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <form id="localizationForm">
+            <label for="localization">Enter your city name:</label>
+            <input type="text" placeholder="City..." id="inputData">
+            <button type="button" id="sendLocalizationBtn">Send
+                <i class="fa-solid fa-paper-plane"></i>
+            </button>
+        </form>
+        
+        
+
+        <div class="card">
+            <div id="location">
+                <h1 id="locationCity"></h1>   
+            </div>
+            <div id="img"></div>
+            <div id="temp">
+                <div id="temperature"></div>
+                <div id="date"></div>
+            </div>
+
+            <div id="windHumidity">
+            </div>
+
+            <div id="pressure"></div>
+            <button type="button" id="backBtn">
+                <i class="fa-solid fa-arrow-left"></i>
+                Get Back
+            </button>
+        </div>
+    </div>
+    
+    
+</body>
+<script src="app.js"></script>
+</html>

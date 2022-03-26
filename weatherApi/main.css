@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&family=Roboto:wght@400;500&display=swap');
+
+:root {
+    --dark-gray: #131414;
+    --font-white: #fff;
+    --sea-green: #37B39E;
+    --darker-sea-green: #26917d;
+    --light-red: salmon;
+}
+
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: var(--dark-gray);
+    color: var(--font-white);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 85vh;
+}
+
+/*Localization input styling*/
+#localizationForm {
+    font-size: 2rem;
+    min-width: 30ch;
+    display: flex;
+    flex-direction: column;
+}
+
+#localizationForm>* {
+    margin-bottom: 1em;
+
+}
+
+#localizationForm>label {
+    margin-top: 5em;
+}
+
+#localizationForm>input {
+    padding: 1rem;
+    font-size: 1.75rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    border: 0;
+    border-radius: 10px;
+}
+
+/*Buttons*/
+#sendLocalizationBtn,
+#backBtn {
+    padding: 1rem;
+    max-width: 20ch;
+    border-radius: 10px;
+    border: 0;
+    font-size: 1rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    background-color: var(--darker-sea-green);
+    transition: cubic-bezier(0.165, 0.84, 0.44, 1) 0.5s;
+    cursor: pointer;
+    color: var(--font-white);
+}
+
+#sendLocalizationBtn,
+#backBtn:hover {
+    background-color: var(--sea-green);
+}
+
+#backBtn {
+    min-width: 40ch;
+    max-height: 10vh;
+    margin-top: 5em;
+    grid-row-start: 4;
+    grid-row-end: 5;
+}
+
+/*Card styling*/
+.card {
+    margin-top: 5em;
+    max-width: 80%;
+    min-width: 70%;
+    padding: 1.75rem;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.1vw;
+    letter-spacing: 1px;
+
+}
+
+.card>div {
+    margin: 1rem 0rem;
+}
+
+#img {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#img>h2 {
+    font-size: 1.5em;
+    color: var(--light-red);
+    font-family: sans-serif;
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+#temperature {
+    text-align: center;
+}
+
+.card>#location {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#location>h1>i {
+    font-size: 1.25em;
+    margin-left: 0.25em;
+}
+
+
+/*Responsive design*/
+@media (max-width:764px) {
+
+
+    .card {
+        padding: 1rem;
+        max-width: 80%;
+        font-size: 4vw;
+        border: 4px solid var(--sea-green);
+        border-radius: 10px;
+    }
+
+    #localizationForm {
+        min-width: 10ch;
+    }
+
+
+
+}

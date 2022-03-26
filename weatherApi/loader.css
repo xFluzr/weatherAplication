@@ -1,0 +1,35 @@
+#loader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#loader>span {
+    display: none;
+    margin-top: 30em;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: rgb(77, 200, 248);
+    transform: translate3d(0);
+    animation: shake 0.7s infinite alternate;
+    margin: 0 0.3rem;
+}
+
+#loader>span:nth-child(2) {
+    background-color: rgb(29, 119, 236);
+    animation-delay: 0.2s;
+}
+
+#loader>span:nth-child(3) {
+    background-color: #37B39E;
+    animation-delay: 0.3s;
+}
+
+@keyframes shake {
+    to {
+        width: 16px;
+        height: 16px;
+        transform: translate3d(0, -16px, 0);
+    }
+}

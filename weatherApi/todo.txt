@@ -1,9 +1,0 @@
-Todo :
-1.Loading after inserting data V
-2.Add button V
-3.Add Card and elements in it V
-4.Style card elements V
-5.Added loading screen V
-6.Learn about weather api https://www.visualcrossing.com/weather/weather-data-services/D%C4%99bica?v=api V
-7.Fetch data from it V
-8.Add alert if data is bad
